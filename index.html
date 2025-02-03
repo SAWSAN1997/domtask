@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom task</title>
+    <style>
+      .error {
+        color: red;
+        font-size: 0.9em;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="registrationForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" />
+      <span class="error" id="usernameError"></span><br /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+      <span class="error" id="passwordError"></span><br /><br />
+
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" />
+      <span class="error" id="confirmPasswordError"></span><br /><br />
+
+      <input
+        type="submit"
+        value="Register"
+        id="registerBtn"
+        class="disabled"
+        disabled
+      />
+    </form>
+    <span class="success" id="successMessage"></span>
+
+    <script src="dom.js"></script>
+  </body>
+</html>
